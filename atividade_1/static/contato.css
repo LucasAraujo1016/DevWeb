@@ -12,6 +12,18 @@ header {
     background-color: #F5DDC3;
 }
 
+main {
+    width: 100vw;
+    height: 70vh;
+}
+
+footer {
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    justify-content: center;
+}
+
 .icon {
     width: auto;
     height: 100%;
@@ -54,10 +66,11 @@ header {
 
 .copyrigth {
     display: flex;
-    margin-top: 30%;
     justify-content: center;
+    align-items: center;
     font-size: small;
-}
+    text-align: center;
+    }
 
 .form {
     display: flex;
@@ -69,9 +82,15 @@ header {
 }
 
 .inputdesc {
-    display: flex;
-    height: 75px;
-    margin-top: 0;
+    height: 100px;
+    width: 300px;
+    resize: none;
 }
 
+.botao {
+    margin-top: 10px;
+    cursor: pointer;
+    width: 70px;
+    text-align: center;
+}
 
