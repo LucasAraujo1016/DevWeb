@@ -1,6 +1,8 @@
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
-    background-color: #CC9969;
+    background-color: #B96D40;
 }
 
 header {
@@ -9,10 +11,12 @@ header {
     display: flex;
     flex-direction: row;
     margin: 0;
-    background-color: #F5DDC3;
+    background-color: #FFCF9C;
 }
 
 main {
+    display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 70vh;
 }
@@ -22,6 +26,10 @@ footer {
     width: 100vw;
     height: 10vh;
     justify-content: center;
+}
+
+p, h1 {
+    font-family: "Montserrat", sans-serif;
 }
 
 .icon {
@@ -43,13 +51,14 @@ footer {
     text-align: center;
     align-items: center;
     margin-right: 5%;
+    font-family: "Montserrat", sans-serif;
 }
 
 .navbar a {
     padding: 5px;
     border-right-style: solid;
     color: black;
-    }
+}
 
 .noborda {
     border: 0;
@@ -70,7 +79,7 @@ footer {
     align-items: center;
     font-size: small;
     text-align: center;
-    }
+}
 
 .form {
     display: flex;

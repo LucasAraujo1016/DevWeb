@@ -1,6 +1,8 @@
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
-    background-color: #CC9969;
+    background-color: #B96D40;
 }
 
 header {
@@ -9,7 +11,23 @@ header {
     display: flex;
     flex-direction: row;
     margin: 0;
-    background-color: #F5DDC3;
+    background-color: #FFCF9C;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    justify-content: center;
+}
+
+p, h1 {
+    font-family: "Montserrat", sans-serif;
 }
 
 .icon {
@@ -31,13 +49,14 @@ header {
     text-align: center;
     align-items: center;
     margin-right: 5%;
+    font-family: "Montserrat", sans-serif;
 }
 
 .navbar a {
     padding: 5px;
     border-right-style: solid;
     color: black;
-    }
+}
 
 .noborda {
     border: 0;
@@ -49,11 +68,48 @@ header {
 
 .descriçao {
     display: flex;
+    flex-direction: column;
     margin-inline: 50px;    
+}
+
+.motivos {
+    display: flex;
+}
+
+.grãocafé {
+    margin-inline: 5%;
+}
+
+.grãocafé > p{
+    display: flex;
+    background-color: aqua;
+    max-width: 50vw;
+    text-align: center;
+}
+
+.imagem {
+    display: flex;
+    background-color: #FFCF9C;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;    
+}
+
+.imagem > p {
+    text-align: center;
+    margin-inline: 2%;
+}
+
+.imagem > img {
+    width: auto;
+    height: 55vh;
+    
 }
 
 .copyrigth {
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: small;
+    text-align: center;
 }
