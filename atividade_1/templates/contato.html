@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <link rel="stylesheet" href="/atividade_1/static/contato.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/atividade_1/static/contato.css">
 </head>
 <body>
     <header>
@@ -30,17 +32,24 @@
             </article>
         </section>
         <section class="entrecontato">
-            <form class="form" action="">
-                <label for="email">Seu E-mail</label>
-                <input type="email" id="email" name="email">
-                <label for="text">Assunto</label>
-                <input type="text" id="Assunto" name="Assunto">
-                <label for="text">Descrição</label>
-                <textarea class="inputdesc" type="text" name="descriçao" rows="4" cols="50" maxlength="300" >
-                </textarea>
-                <button class="botao" type="button" onclick="alert('Obrigado pela preferência!!!')" >Enviar</button>
-            </form>
-            <img src="/atividade_1/static/Imagens_atividade_1/agradecimento.jpg" alt="https://pixabay.com/pt/photos/café-caneta-caderno-2306471/">
+            <div class="container mt-3">
+                <form action="/action_page.php">
+                  <div class="mb-3 mt-3">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Coloque seu email" name="email">
+                  </div>
+                  <div class="mb-3">
+                    <label for="pwd">Senha:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Coloque sua senha" name="pswd">
+                  </div>
+                  <div>
+                    <label for="comment">Comments:</label>
+                    <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                  </div>
+                    <button type="submit" class="btn btn-primary" style="margin-top: 2%; margin-bottom: 2%;">Enviar</button>
+                </form>
+              </div>
+              <img src="../static/Imagens_atividade_1/agradecimento.jpg" alt="">
         <section>
     </main>
     <footer>

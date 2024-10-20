@@ -4,13 +4,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sobre</title>
-        <link rel="stylesheet" href="/atividade_1/static/sobre.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="/atividade_1/static/sobre.css">
     </head>
     <body>
         <header>
@@ -30,25 +32,47 @@
             </article>     
             <section>  
                 <h1 class="sobre">Motivos para visitar</h1> 
-                <article class="motivos">
+                <article class="motivos" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
                     <div class="motivos2">
-                        <div class="imagem">
+                        <nav class="navbar-motivos navbar-expand-sm">
+                            <div class="container-fluid">
+                              <ul class="navbar-nav">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#grão">Café de qualidade</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#ambiente">Ambiente</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#eventos">Eventos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#comidas">Comidas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#barista">Baristas</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </nav>
+                          
+                        <div id="grão" class="imagem">
                             <p><b>Café de Alta Qualidade:</b> Desfrute de uma seleção de cafés preparados com grãos selecionados das melhores plantações.</p>
                             <img src="/atividade_1/static/Imagens_atividade_1/grão_café.jpg" alt="https://pixabay.com/pt/photos/café-grãos-de-café-aroma-assado-4591159/" alt="https://pixabay.com/pt/photos/café-grãos-de-café-aroma-assado-4591159/">
                         </div>
-                        <div class="imagem">
+                        <div id="ambiente" class="imagem">
                             <img src="/atividade_1/static/Imagens_atividade_1/ambiente.jpg" alt="https://pixabay.com/pt/photos/cafeteria-interior-mobiliário-mesas-5635015/">
                             <p><b>Ambiente aconchegante:</b> Espaço rústico e elegante, com móveis de madeira e iluminação suave, cria um ambiente perfeito para relaxar, trabalhar ou socializar. É o lugar ideal para uma pausa tranquila do dia a dia.</p>
                         </div>
-                        <div class="imagem">
+                        <div id="eventos" class="imagem">
                             <p><b>Ponto de Encontro Cultural:</b> O Grão da Montanha promove eventos culturais mensais, como noites de música ao vivo, sessões de leitura de poesia e exposições de arte local.</p>
                             <img src="/atividade_1/static/Imagens_atividade_1/eventos.jpg" alt="https://pixabay.com/pt/photos/aluna-foto-exibição-galeria-1258137/">
                         </div>    
-                        <div class="imagem">
+                        <div id="comidas" class="imagem">
                             <img src="/atividade_1/static/Imagens_atividade_1/comidas.jpg" alt="https://pixabay.com/pt/photos/pão-croissants-comida-padaria-4077812/">
                             <p><b>Delícias Artesanais:</b> Além do café, você pode desfrutar de uma seleção de bolos, tortas e quitutes artesanais, preparados diariamente com ingredientes frescos.</p>
                         </div>    
-                        <div class="imagem">
+                        <div id="barista" class="imagem">
                             <p><b>Experiência Personalizada:</b> O serviço atencioso e a paixão dos baristas pelo café garantem uma experiência personalizada e acolhedora.</p>
                             <img src="/atividade_1/static/Imagens_atividade_1/barista.jpg" alt="https://pixabay.com/pt/photos/especialidade-de-café-café-4568579/">
                         </div>                            
