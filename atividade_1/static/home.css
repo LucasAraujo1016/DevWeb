@@ -7,7 +7,9 @@ body {
 
 header {
     width: 100%;
-    height: 15vh;
+    position: fixed;
+    top: 0;
+    z-index: 2;
     display: flex;
     flex-direction: row;
     margin: 0;
@@ -17,6 +19,7 @@ header {
 main {
     display: flex;
     flex-direction: column;
+    margin-top: 11vw;
 }
 
 footer {
@@ -48,18 +51,18 @@ p, h1 {
 .navbar {
     display: flex;
     width: 100%;
-    height: 15vh;
-    justify-content: flex-end;
-    text-align: center;
-    align-items: center;
+    height: 25vh;
     margin-right: 5%;
     font-family: "Montserrat", sans-serif;
 }
 
 .navbar a {
     padding: 5px;
-    border-right-style: solid;
     color: black;
+}
+
+.navbar-brand {
+    display: flex;
 }
 
 .noborda {
@@ -81,4 +84,25 @@ p, h1 {
     align-items: center;
     font-size: small;
     text-align: center;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        height: auto;
+    }
+
+    .navbar-brand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-fluid {
+        width: auto;
+        justify-content: center;
+    }
+
+    main {
+        margin-top: 40vw;
+    }
 }
