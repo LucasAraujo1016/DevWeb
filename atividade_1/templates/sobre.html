@@ -10,32 +10,47 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" integrity="sha384q8i/X+965DzO0rj75cZsmW0l8h2Q1VR72vmF0Yt5k8k/2Fz/8uTc3F3MBOwdi0f" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="/atividade_1/static/sobre.css">
     </head>
     <body>
         <header>
-            <img class="icon" src="/atividade_1/static/Imagens_atividade_1/logo.jpg" alt="https://www.google.com/url?sa=i&url=https%3A%2F%2Fbr.freepik.com%2Fvetores-premium%2Fmodelo-de-design-de-logotipo-de-vetor-de-xicara-de-cafe-logotipo-de-cafeteria-premium_80965755.htm&psig=AOvVaw3dcHptFzs7hDBpEfCs_YG7&ust=1725577561701000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNiLppCzqogDFQAAAAAdAAAAABAE">
-            <h1 class="cafenome">Cafeteria Grão da montanha</h1>
-            <nav class="navbar">
-                <a href="/atividade_1/templates/home.html">Home</a>
-                <a href="/atividade_1/templates/sobre.html">Quem somos</a>
-                <a class="noborda" href="/atividade_1/templates/contato.html">Contatos</a>
-            </nav>
+            <nav class="navbar navbar-expand-sm">
+                <div class="container-fluid-navbar">
+                  <div class="navbar-brand">
+                    <img src="../static/Imagens_atividade_1/logo.jpg" alt="Logo" style="width:10vw;" class="rounded-pill"> 
+                    <h1 class="cafenome">Cafeteria Grão da montanha</h1>  
+                  </div>
+                </div>
+                <div class="container-fluid justify-content-end">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="./home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./contato.html">Contato</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
         </header>
         <main>
-            <h1 class="sobre">Quem somos</h1>
-            <article>
-                <p class="descriçao">Além de nossos cafés, nossa cafeteria é conhecida por seu ambiente acolhedor e seu cardápio diversificado. Servimos uma seleção de bolos, tortas e quitutes artesanais, todos preparados diariamente com ingredientes frescos. O espaço é decorado com um estilo rústico e elegante, com móveis de madeira e uma iluminação suave que cria a atmosfera perfeita para relaxar, trabalhar ou encontrar amigos.</p>
+            <section class="mt-4 p-5 rounded">
+                <h1 class="sobre">Quem somos</h1>
                 <p class="descriçao">A Grão da Montanha também é um ponto de encontro cultural. Realizamos eventos mensais como noites de música ao vivo, sessões de leitura de poesia e exposições de arte local. Esses eventos são uma oportunidade para a comunidade se conectar e desfrutar de uma experiência cultural enriquecedora.</p>
-            </article>     
+              </section>    
             <section>  
                 <h1 class="sobre">Motivos para visitar</h1> 
                 <article class="motivos" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
                     <div class="motivos2">
                         <nav class="navbar-motivos navbar-expand-sm">
-                            <div class="container-fluid">
+                            <div class="container-fluid-scrospy">
                               <ul class="navbar-nav">
                                 <li class="nav-item">
                                   <a class="nav-link" href="#grão">Café de qualidade</a>
@@ -78,11 +93,105 @@
                         </div>                            
                     </div>
             </section>
-            <h1 class="sobre">Objetivos</h1>
-            <article>
+            
+            <section class="grãos p-5 rounded">
+                <h1>Conheça alguns de nossos grãos</h1>
+                <div class="dropdown">
+                    <button class="btn custom-dropdown-btn dropdown-toggle" type="button" data-toggle="dropdown">Nossos Grãos
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" data-toggle="modal" data-target="#Jamaican" href="#">Jamaican Blue Mountain</a></li>
+                      <li><a class="dropdown-item" data-toggle="modal" data-target="#Brazilian" href="#">Brazilian Bourbon</a></li>
+                      <li><a class="dropdown-item" data-toggle="modal" data-target="#Mexican" href="#">Mexican Altura</a></li>
+                      <li><a class="dropdown-item" data-toggle="modal" data-target="#Costa-Rican" href="#">Costa Rican SHB</a></li>
+                      <li><a class="dropdown-item" data-toggle="modal" data-target="#Mocha-Matari" href="#">Mocha Matari</a></li>
+                    </ul>
+                  </div>
+            </section>
+            
+            <div class="mt-4 p-5 rounded">
+                <h1 class="sobre">Objetivos</h1>
                 <p class="descriçao">O objetivo do Grão da Montanha Café é oferecer uma experiência única e acolhedora com café de alta qualidade e um ambiente agradável, enquanto promove a conexão comunitária através de eventos culturais e oferece produtos artesanais frescos.</p>
-            </article>
+            </div>
         </main>
+
+        <modal>
+            <div class="modal" id="Jamaican" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title">Jamaican Blue Mountain:</h5>
+                    </div>
+                    <div class="modal-body">
+                    <p> As Blue Mountains da Jamaica têm um clima único e solo vulcânico vantajoso para o cultivo do seu famoso café de alta qualidade. O café passa por um rigoroso processo de inspeção e é colhido em pequenas quantidades. Isso produz um café rico com aroma intenso.</p>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="modal" id="Brazilian" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title">Brazilian Bourbon:</h5>
+                    </div>
+                    <div class="modal-body">
+                    <p> O Brasil produz a maior quantidade de café do mundo. Os seus grãos são conhecidos por serem de alta qualidade e terem acidez e amargor equilibrados. O Brazilian Bourbon é produzido apenas em pequenas quantidades, por isso é raro no Brasil. Tem uma doçura notavelmente suave e um final limpo.</p>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="modal" id="Mexican" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title">Mexican Altura:</h5>
+                    </div>
+                    <div class="modal-body">
+                    <p> Diz-se que o café foi trazido para o México pelos espanhóis no século XVIII. O México é agora um dos maiores produtores de café do mundo. Altura significa “altura” em espanhol, descreve a altitude em que os grãos foram cultivados. Tem um aroma saboroso, acidez suave e sabor de nozes.</p>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="modal" id="Costa-Rican" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title">Costa Rican SHB:</h5>
+                    </div>
+                    <div class="modal-body">
+                    <p> A Costa Rica é abundante em natureza com uma grande variedade de vida vegetal e animal e exporta café há séculos. Strictly Hard Bean (SHB) é uma classificação dada ao café cultivado em alta altitude, a 4.500 pés. Tem um sabor elegante e aroma doce.</p>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="modal" id="Mocha-Matari" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title">Mocha Matari:</h5>
+                    </div>
+                    <div class="modal-body">
+                    <p>  “Mocha” denota que o café foi exportado de Mocha, uma cidade portuária na República do Iêmen. O Mocha Matari tem um perfil de sabor complexo de especiarias e chocolate com um corpo pesado e “vinhoso” para complementá-lo.</p>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+                </div>
+            </div>
+        </modal>
+
         <footer>
             <h1 class="copyrigth">Copyrigth © 2024 - All Rigths Reserved - Grão da montanha</h1>
         </footer>

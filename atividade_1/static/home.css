@@ -19,7 +19,7 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    margin-top: 11vw;
+    margin-top: 11%;
 }
 
 footer {
@@ -65,8 +65,14 @@ p, h1 {
     display: flex;
 }
 
-.noborda {
-    border: 0;
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.sobre1 {
+    background-color: #B96D40;
 }
 
 .sobre {
@@ -103,6 +109,6 @@ p, h1 {
     }
 
     main {
-        margin-top: 40vw;
+        margin-top: 28vw;
     }
 }
